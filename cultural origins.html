@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+</script>
+<body>
+  <header class="navbar">
+   
+    <nav class="navbar">
+      <div class="logo">SAVOR THE GLOBE</div>
+      
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="cultural origins.html">CULTURAL ORIGINS</a></li>
+        <li><a href="feedback.html">FEEDBACK</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section class="cultural-origins" id="origins">
+        <div class="origins-container">
+          <h2 id="origins-text">Cultural Origins of Our Dishes</h2>
+          <p class="intro-text">
+            Every dish at Savor the Globe tells a story. Discover the roots of our favorite meals and the traditions that inspired them.
+          </p>
+      
+          <div class="origin-grid">
+            <!-- Japanese Ramen -->
+            <div class="origin-card">
+              <img src="ramen.jpg" alt="Japanese Ramen">
+              <h3>Japanese Ramen</h3>
+              <p>
+                A soul-warming noodle soup that began in post-war Japan and evolved into a global favorite.
+                   </p>
+            </div>
+      
+            
+            <!-- Italian Pasta -->
+            <div class="origin-card">
+              <img src="pasta-rigatoni.jpg" alt="Italian Pasta">
+              <h3>Italian Pasta</h3>
+              <p>
+                A beloved symbol of Italian cuisine, pasta reflects simplicity, family, and centuries of tradition.
+                 </p>
+            </div>
+      
+            <!-- American Prime Ribs -->
+            <div class="origin-card">
+              <img src="prime-ribs.avif" alt="American Prime Ribs">
+              <h3>American Prime Ribs</h3>
+              <p>
+                A classic centerpiece of American steakhouses, prime rib is known for its tenderness and bold flavor, often reserved for special occasions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 Savor the Globe. All rights reserved.</p>
+      </footer>
+</body>
+</html>

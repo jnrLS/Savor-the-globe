@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</head>
+
+<body>
+    
+  <header class="navbar">
+ 
+  <nav class="navbar">
+    <div class="logo">SAVOR THE GLOBE</div>
+    
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about-us.html">ABOUT US</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="cultural origins.html">CULTURAL ORIGINS</a></li>
+      <li><a href="feedback.html">FEEDBACK</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <section class="feedback-section" id="feedback">
+        <div class="feedback-container">
+          <h2 id="feedback-text">We Value Your Feedback</h2>
+          <p>Please share your thoughts with us. Your feedback helps us improve!</p>
+          <form action="#" method="post" class="feedback-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+      
+            <label for="message">Your Feedback</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+      
+            <button type="submit">Submit Feedback</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 Savor the Globe. All rights reserved.</p>
+      </footer>
+      
+      
+</body>
+</html>
